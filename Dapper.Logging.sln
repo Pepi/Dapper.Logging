@@ -1,31 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E83E87F-F780-4908-A89B-BB59F1AAB171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Logging", "src\Dapper.Logging\Dapper.Logging.csproj", "{E7B84A8C-7A3D-4B0C-8A38-AD50A1E15F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Logging", "src\Dapper.Logging\Dapper.Logging.csproj", "{E7B84A8C-7A3D-4B0C-8A38-AD50A1E15F43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6BBD38EE-D799-4E04-9C6E-1D7CDD74111C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "samples\Data\Data.csproj", "{80E36714-5DCD-4C84-B94B-157D1059B0DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "samples\Data\Data.csproj", "{80E36714-5DCD-4C84-B94B-157D1059B0DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiV3", "samples\ApiV3\ApiV3.csproj", "{95D57301-D8E1-4340-87DA-A88A53AF7B82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiV3", "samples\ApiV3\ApiV3.csproj", "{95D57301-D8E1-4340-87DA-A88A53AF7B82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{209B620D-3479-4D94-A1FD-6C03B3E41A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Logging.Tests", "tests\Dapper.Logging.Tests\Dapper.Logging.Tests.csproj", "{74ECD200-F385-4F43-AA63-81233C10B7FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapper.Logging.Tests", "tests\Dapper.Logging.Tests\Dapper.Logging.Tests.csproj", "{74ECD200-F385-4F43-AA63-81233C10B7FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{1F841F7F-2C01-4FDB-A28E-2F2B2B43BFCA}"
-ProjectSection(SolutionItems) = preProject
-	docker-compose.yml = docker-compose.yml
-	dockerfile = dockerfile
-	initdb.sql = initdb.sql
-	LICENSE.md = LICENSE.md
-	README.md = README.md
-	strong-name.snk = strong-name.snk
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		dockerfile = dockerfile
+		initdb.sql = initdb.sql
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+		strong-name.snk = strong-name.snk
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,9 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E7B84A8C-7A3D-4B0C-8A38-AD50A1E15F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -89,10 +86,17 @@ Global
 		{74ECD200-F385-4F43-AA63-81233C10B7FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{74ECD200-F385-4F43-AA63-81233C10B7FD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E7B84A8C-7A3D-4B0C-8A38-AD50A1E15F43} = {0E83E87F-F780-4908-A89B-BB59F1AAB171}
+		{6BBD38EE-D799-4E04-9C6E-1D7CDD74111C} = {1F841F7F-2C01-4FDB-A28E-2F2B2B43BFCA}
 		{80E36714-5DCD-4C84-B94B-157D1059B0DB} = {6BBD38EE-D799-4E04-9C6E-1D7CDD74111C}
 		{95D57301-D8E1-4340-87DA-A88A53AF7B82} = {6BBD38EE-D799-4E04-9C6E-1D7CDD74111C}
 		{74ECD200-F385-4F43-AA63-81233C10B7FD} = {209B620D-3479-4D94-A1FD-6C03B3E41A99}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7489B43C-4F58-4AC0-B5DC-FFFB3A80D811}
 	EndGlobalSection
 EndGlobal
